@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useAuth } from "./context/AuthContext";
 import { redirect } from "next/navigation";
 import Login from "./login/page";
-import Dashboard from "./dashboard/page";
+
 
 
 // import { AuthProvider } from '@/app/context/AuthContext';
