@@ -1,21 +1,5 @@
-"use client"
-import Image from "next/image";
-import { useAuth } from "./context/AuthContext";
-import { redirect } from "next/navigation";
-import Login from "./login/page";
-import Dashboard from "./dashboard/page";
-
-
-// import { AuthProvider } from '@/app/context/AuthContext';
-export default function xHome() {
-// get the user session
-  const {user} = useAuth()
-
-  // redirect to login page if the user does not have a session
-  if (!user)
-    redirect("/login")
+export default function Dashboard() {
   return (
-    
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-64 bg-white p-5 shadow-lg">
@@ -58,5 +42,9 @@ export default function xHome() {
         </section>
       </main>
     </div>
+
+          
+          
+
   );
 }

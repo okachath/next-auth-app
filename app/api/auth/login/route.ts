@@ -4,7 +4,7 @@ export async function POST(req: Request) {
     const { email, password } = await req.json();
 
     try {
-        const response = await fetch('http://localhost:8000/login', {
+        const response = await fetch('https://auth-fastapi-1-lbwh.onrender.com/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),

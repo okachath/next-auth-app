@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     }
 
     try {
-        const response = await fetch('http://localhost:8000/register', {
+        const response = await fetch('https://auth-fastapi-1-lbwh.onrender.com/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, password, confirm_password}),
